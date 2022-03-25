@@ -11,5 +11,5 @@ btn.addEventListener("click", function (e) {
     e.preventDefault();
     displayPhrase.appendChild(paragraph);
     paragraph.innerHTML = madLibs(adjective.value, noun.value, verb.value, adverb.value);
-  });
+});
   

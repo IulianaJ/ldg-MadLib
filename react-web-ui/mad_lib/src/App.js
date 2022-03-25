@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="container">
+        <form>
+            <label htmlFor="verb">Enter a verb:</label>
+            <input type="text" id="verb" name="verb"/><br /><br /><br />
+            <label htmlFor="noun">Enter a noun:</label>
+            <input type="text" id="noun" name="noun"/><br /><br /><br />
+            <label htmlFor="adjective">Enter an adjective:</label>
+            <input type="text" id="adjective" name="adjective"/><br /><br /><br />
+            <label htmlFor="adverb">Enter an adverb:</label>
+            <input type="text" id="adverb" name="adverb"/><br /><br /><br />
+            <input type="submit" name="btn" id="btn"/>
+        </form>
+        <div id="displayPhrase"></div>
+    </div>
     </div>
   );
 }
